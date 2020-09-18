@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://servicioweb/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicioweb/">
+
+<xs:element name="CatetoA" type="tns:CatetoA"/>
+
+<xs:element name="CatetoAResponse" type="tns:CatetoAResponse"/>
+
+<xs:element name="CatetoB" type="tns:CatetoB"/>
+
+<xs:element name="CatetoBResponse" type="tns:CatetoBResponse"/>
+
+<xs:element name="Hipotenusa" type="tns:Hipotenusa"/>
+
+<xs:element name="HipotenusaResponse" type="tns:HipotenusaResponse"/>
+
+<xs:element name="VolumenCubo" type="tns:VolumenCubo"/>
+
+<xs:element name="VolumenCuboResponse" type="tns:VolumenCuboResponse"/>
+
+<xs:element name="VolumenPentagono" type="tns:VolumenPentagono"/>
+
+<xs:element name="VolumenPentagonoResponse" type="tns:VolumenPentagonoResponse"/>
+
+<xs:element name="VolumenRectangulo" type="tns:VolumenRectangulo"/>
+
+<xs:element name="VolumenRectanguloResponse" type="tns:VolumenRectanguloResponse"/>
+
+<xs:element name="VolumenTriangulo" type="tns:VolumenTriangulo"/>
+
+<xs:element name="VolumenTrianguloResponse" type="tns:VolumenTrianguloResponse"/>
+
+<xs:complexType name="CatetoB">
+<xs:sequence>
+<xs:element name="hipotenusa" type="xs:double"/>
+<xs:element name="catetoA" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CatetoBResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VolumenCubo">
+<xs:sequence>
+<xs:element name="lado1" type="xs:double"/>
+<xs:element name="lado2" type="xs:double"/>
+<xs:element name="altura" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VolumenCuboResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Hipotenusa">
+<xs:sequence>
+<xs:element name="catetoA" type="xs:double"/>
+<xs:element name="catetoB" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HipotenusaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VolumenRectangulo">
+<xs:sequence>
+<xs:element name="largo" type="xs:double"/>
+<xs:element name="ancho" type="xs:double"/>
+<xs:element name="alto" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VolumenRectanguloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VolumenTriangulo">
+<xs:sequence>
+<xs:element name="base" type="xs:double"/>
+<xs:element name="altura" type="xs:double"/>
+<xs:element name="alturacuerpo" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VolumenTrianguloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VolumenPentagono">
+<xs:sequence>
+<xs:element name="lado" type="xs:double"/>
+<xs:element name="apotema" type="xs:double"/>
+<xs:element name="altura" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="VolumenPentagonoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CatetoA">
+<xs:sequence>
+<xs:element name="hipotenusa" type="xs:double"/>
+<xs:element name="catetoB" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CatetoAResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
